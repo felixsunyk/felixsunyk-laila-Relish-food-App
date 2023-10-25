@@ -1,5 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
 
+
+
 .homepage{
     text-align: center;
     margin-top: 3em;
@@ -156,5 +158,79 @@ a{
 .forgetpageh1{
     margin-bottom: 1.7em;
 }
+
+/* main page nav css */
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+}
+.logoicon{
+    position: relative;
+    top: 0.6em;
+}
+.nav-item{
+    margin-right: 1em;
+    
+}
+.goout{
+    border: 1px solid rgb(183, 186, 183);
+    padding: 0.2em 1.5em;
+    background-color: green;
+    color: white;
+    margin: 1em;
+    font-size: smaller;
+    border-radius: 2em;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2em;
+    padding: 2em;
+    background-color: antiquewhite;
+    border-radius: 2em;
+    gap: 2em;
+}
+.carousel-item{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-top: 2em;
+    padding: 2em;
+     background-color: antiquewhite; 
+     border-radius: 2em;
+    gap: 2em;
+
+}
+
+
+.container-sm{
+    display: block;
+    /* border: 1px solid greenyellow; */
+    width: fit-content;
+    margin: 2em auto;
+}
+ .main-dishes-box{
+    display: flex;
+    flex-direction: row;
+    /* gap: 5.5em; */
+    /* line-height: 0.5em; */
+}
+/* .free{ */
+    /* background-color: rgb(191, 60, 60); */
+    /* color: white; */
+    /* width: fit-content; */
+    /* padding:0.4em ; */
+    /* margin: 0.4em; */
+    /* border-radius: 0.3em; */
+/* } */
+.main-dishes{
+    /* margin: 0.4em; */
+   font-size: larger;
+   font-weight: bold;
+}
+.span{
+    color: rgb(240, 53, 53);
+} 
 
 
