@@ -1,0 +1,160 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
+
+.homepage{
+    text-align: center;
+    margin-top: 3em;
+}
+.homeimage{
+    margin-bottom: 2em;
+}
+.homeimage p{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ letter-spacing: 0.2em;
+}
+.input{
+    border: 2px solid green;
+    padding: 0.6em 1em 0.6em 2em;
+    font-size: medium;
+    border-radius: 10em;
+    color: rgb(19, 18, 18);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0.5em;
+}
+input:hover{
+    filter: brightness(0.7);
+}
+.password{
+    border: 1px solid rgb(129, 167, 129);
+}
+.login{
+    border: 1px solid rgb(183, 186, 183);
+    padding: 0.4em 3em;
+    background-color: green;
+    color: white;
+    margin: 1em;
+    font-size: medium;
+    border-radius: 10em;
+} 
+.button:hover{
+    filter: brightness(0.7);
+    transform: translateY(3px);
+}
+
+
+.forgotpass{
+    text-transform: capitalize;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+.hr-container{
+    width: 50%;
+    /* margin: 0; */
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.newaccount{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+}
+.signup{
+    color: rgb(71, 236, 71);
+    margin-left: 0.5em;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+/* sign up page css */
+
+.sign-up-page{
+    text-align: center;
+    margin-top: 3em;
+}
+.sign-up-page-h1{
+    color: rgb(80, 150, 80);
+    margin-bottom: 1em;
+    
+}
+.sign-up-g{
+    margin: 1em auto;
+}
+
+
+/* resetpage css */
+.resetpage{
+    justify-content: center;
+    text-align: center;
+    margin: 4em auto;
+    border: 1px solid white;
+    width: max-content;
+    background-color: rgb(250, 247, 244);
+    padding: 1em;
+    border-radius: 2em;
+    /* width: fit-content; */
+    
+}
+.reseth1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1em;
+}
+.resetpage p{
+    margin-bottom: 1em;
+}
+.change-email{
+    border-bottom: 1px solid green;
+    color: green;
+}
+
+/* reset form css */
+.reset-form{
+    margin: 4em auto;
+    /* width: 100%; */ 
+     width: max-content;
+    text-align: center;
+    padding: 1em; 
+    border-radius: 2em;
+    border: 1px solid white;
+    padding-top: 5em;
+    background-color: darkgrey;
+    /* height: 100vh; */
+ }   
+  
+   
+    
+
+.reset-form-h1{
+    margin-bottom: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.resetlogin{
+   border-radius: 0.3em;
+   border: 1px solid rgb(183, 186, 183);
+    padding: 0.4em 3.5em;
+    background-color: green;
+    color: white;
+    margin: 1em;
+    font-size: medium;
+}
+
+/* forget page css */
+
+.forgetpage{
+    margin: 4em auto;
+    border-radius: 2em;
+     width: max-content;
+    border: 1px solid rgb(183, 186, 183);
+    text-align: center;
+    padding: 0.4em;
+    padding-top: 3em;
+    background-color: darkgrey;
+    
+}
+.forgetpageh1{
+    margin-bottom: 1.7em;
+}
+
+
