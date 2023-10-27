@@ -1,7 +1,8 @@
 *{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
 
-/* .index-page{
-} */
+body{
+    filter: brightness(0.7);background-color: cadetblue;
+}
 .index-div{
     text-align: center;
     background-color:white;
@@ -221,13 +222,22 @@ a{
     border-radius: 2em;
 
 }
+
+
+
+.container::-webkit-scrollbar{
+    display: none;
+}
 .container{
+       height: 30em;
+    overflow-y: scroll;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    flex-wrap: wrap;
     margin-top: 2em;
     padding: 2em;
-    background-color: antiquewhite;
-    border-radius: 2em;
+    background-color: rgb(173, 162, 146);
+    border-radius: 1em;
     gap: 2em;
 }
 .carousel-item{
@@ -275,6 +285,8 @@ a{
 /* Edit page css */
 .editpage{
     text-align: center;
+    background-color: aquamarine;
+    filter: brightness(0.7);
     /* margin-top: 3em; */
 }
 .editpageh1{
@@ -294,7 +306,7 @@ a{
     margin-bottom: 1em;
 }
 .editname{
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-left: 1em;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
