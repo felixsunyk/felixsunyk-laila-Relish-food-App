@@ -1,7 +1,8 @@
 *{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
 
 body{
-    filter: brightness(0.7);background-color: cadetblue;
+    filter: brightness(0.7);
+    background-color: cadetblue;
 }
 .index-div{
     text-align: center;
@@ -223,35 +224,55 @@ a{
 
 }
 
-
-
 .container::-webkit-scrollbar{
     display: none;
 }
 .container{
-       height: 30em;
+    height: 40em;
     overflow-y: scroll;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: repeat(2, 1fr); 
     flex-wrap: wrap;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     padding: 2em;
-    background-color: rgb(173, 162, 146);
     border-radius: 1em;
     gap: 2em;
 }
+.main1{
+    display: block;
+    background-color: rgb(173, 162, 146);
+}
+.bottomnav{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 20%;
+color: aliceblue;
+padding: 2em;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 2em auto;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+}
+.top p{
+ padding-top: 0.9em;
+}
 .carousel-item{
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     margin-top: 2em;
     padding: 2em;
-     background-color: antiquewhite; 
-     border-radius: 2em;
+    background-color: antiquewhite; 
+    border-radius: 2em;
     gap: 2em;
 
 }
-
-
 .container-sm{
     display: block;
     /* border: 1px solid greenyellow; */
@@ -280,6 +301,10 @@ a{
 .span{
     color: rgb(240, 53, 53);
 } 
+.bottomnav{
+    background-color: green;
+    width: 100%;
+}
 
 
 /* Edit page css */
