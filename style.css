@@ -229,45 +229,74 @@ a{
     border-radius: 2em;
 
 }
+.scroll-box{
+    width: 100%; /* Set the width of the box */
+    overflow: scroll;
+    white-space: nowrap;
+    display: block;
+    height: 100vh;
+    overflow-x: scroll;
+
+}
+  .scroll-box::-webkit-scrollbar{
+    display: none;
+} 
+
 
 .container::-webkit-scrollbar{
     display: none;
 }
 .container{
-    height: 40em;
-    overflow-y: scroll;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    flex-wrap: wrap;
+    /* height: 80vh; */
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    /* height: 80vh; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr);  */
+    /* flex-wrap: wrap; */
     /* margin-top: 2em; */
     padding: 2em;
     border-radius: 1em;
     gap: 2em;
 }
-.main1{
-    display: block;
-    background-color: rgb(173, 162, 146);
+.container-sm{
+    /* display: block; */
+    width: 150px; /* Set the width of each item */
+    width: fit-content; 
 }
+/* .main1{
+    display: block;
+    height: 100vh;
+    white-space: nowrap;
+    overflow: scroll;
+    background-color: rgb(173, 162, 146);
+} */
 .bottomnav{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 20%;
-color: aliceblue;
-padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    color: aliceblue;
+    padding: 2em;
+}
+.bottomnav a:hover{
+    color: blanchedalmond;
+    background-color: gray;
+    padding: 0.4em;
 }
 .top{
     display: flex;
     flex-direction: row;
     gap: 1em;
-    margin: 2em auto;
+    /* margin: 2em auto; */
     align-items: center;
     justify-content: center;
     color: brown;
 }
 .top p{
- padding-top: 0.9em;
+    padding-top: 0.9em;
 }
 .carousel-item{
     display: grid;
@@ -279,12 +308,7 @@ padding: 2em;
     gap: 2em;
 
 }
-.container-sm{
-    display: block;
-    /* border: 1px solid greenyellow; */
-    width: fit-content;
-    margin: 2em auto;
-}
+
  .main-dishes-box{
     display: flex;
     flex-direction: row;

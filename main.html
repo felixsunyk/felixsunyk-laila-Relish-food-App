@@ -76,11 +76,58 @@
         </form>
 
 
+        
+        <!-- .scroll-box {
+          width: 300px; /* Set the width of the box */
+          overflow: hidden;
+          white-space: nowrap;
+      }
+      .content {
+          display: flex;
+      }
+      .item {
+          width: 150px; /* Set the width of each item */
+          margin: 10px;
+          border: 1px solid #ccc;
+          padding: 10px;
+      }
+      // JavaScript code to enable horizontal scrolling
+      const content = document.querySelector('.content');
+      const scrollBox = document.querySelector('.scroll-box');
+      
+      scrollBox.addEventListener('mousemove', (e) => {
+          if (e.buttons !== 1) return;
+          content.style.cursor = 'grabbing';
+          scrollBox.scrollLeft += e.movementX;
+      });
+      
+      scrollBox.addEventListener('mouseup', () => {
+          content.style.cursor = 'grab';
+      });
+      
+      scrollBox.addEventListener('mouseleave', () => {
+          content.style.cursor = 'grab';
+      }); -->
+
+      <!-- <div class="scroll-box">
+        <div class="content">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+         
+        </div>
+      </div> -->
 
     <div class="main1">
+
+      <div class="scroll-box">
+        
+        <!-- first scroll box -->
         <div class="container">
+
           <div class="container-sm">
-            <div class="pic"><img src="pictures/coke (1).jpg"  alt="rice" width="100%" height="50%"></div>
+            <div class="pic"><i class="fa fa-arrow-left" aria-hidden="true"></i>   <img src="pictures/coke (1).jpg"  alt="rice" width="100%" height="50%"></div>
              <div class=" main-dishes">main Dishes</div>
             <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
           </div>
@@ -94,8 +141,6 @@
              <div class=" main-dishes">main Dishes</div>
             <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
           </div> 
-              
-          
           <div class="container-sm">
           <div class="pic"><img src="pictures/soup2.jpg" alt="rice" width="100%" height="50%"></div>
            <div class=" main-dishes">main Dishes</div>
@@ -202,21 +247,288 @@
           <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
                 </div>
                 <div class="container-sm">
-          <div class="pic"><img src="pictures/soup4.jpg" alt="rice" width="100%" height="50%"></div>
+          <div class="pic"><img src="pictures/soup4.jpg" alt="rice" width="100%" height="50%"> <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+        </div>
+        </div>
+
+
+        <!-- second scroll box  -->
+        <div class="container">
+          <div class="container-sm">
+            <div class="pic"><i class="fa fa-arrow-left" aria-hidden="true"></i>   <img src="pictures/coke (1).jpg"  alt="rice" width="100%" height="50%"></div>
+             <div class=" main-dishes">main Dishes</div>
+            <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+          </div>
+          <div class="container-sm">
+            <div class="pic"><img src="pictures/soup3.jpg" alt="rice" width="100%" height="50%"></div>
+             <div class=" main-dishes">main Dishes</div>
+            <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+          </div>
+          <div class="container-sm">
+            <div class="pic"><img src="pictures/rice.jpg" alt="rice" width="100%" height="50%"></div>
+             <div class=" main-dishes">main Dishes</div>
+            <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+          </div> 
+          <div class="container-sm">
+          <div class="pic"><img src="pictures/soup2.jpg" alt="rice" width="100%" height="50%"></div>
            <div class=" main-dishes">main Dishes</div>
           <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
                 </div>
-        </div>
-        <div class="top" >
-          <a href="#topnav">
-            <i class="fa fa-upload" aria-hidden="true"> back to top</i>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/eba1.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/chiken.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice5.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/metpie.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/yarm.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/metpie1.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/plantan.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/spag.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/soup1.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
             
-          </a></div>
-        <div class="bottomnav">
-          <p><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i></a></p>
-          <p><a href="EditAccount.html"><i class="fa fa-user-o" aria-hidden="true"></i></a></p>
-          <p><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></p>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/moi moi.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/chiken3.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice6.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/cake2.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice3.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice1.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice4.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/fish.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/bance.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/soup4.jpg" alt="rice" width="100%" height="50%">  <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+        </div>
+      </div>
+
+
+      <!-- third scroll box -->
+        <div class="container">
+          <div class="container-sm">
+            <div class="pic"> <i class="fa fa-arrow-left" aria-hidden="true"></i>   <img src="pictures/coke (1).jpg"  alt="rice" width="100%" height="50%"></div>
+             <div class=" main-dishes">main Dishes</div>
+            <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+          </div>
+          <div class="container-sm">
+            <div class="pic"><img src="pictures/soup3.jpg" alt="rice" width="100%" height="50%"></div>
+             <div class=" main-dishes">main Dishes</div>
+            <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+          </div>
+          <div class="container-sm">
+            <div class="pic"><img src="pictures/rice.jpg" alt="rice" width="100%" height="50%"></div>
+             <div class=" main-dishes">main Dishes</div>
+            <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+          </div> 
+          <div class="container-sm">
+          <div class="pic"><img src="pictures/soup2.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/eba1.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/chiken.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice5.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/metpie.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/yarm.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/metpie1.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/plantan.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/spag.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/soup1.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/moi moi.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/chiken3.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice6.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/cake2.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+            
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice3.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice1.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/rice4.jpg" alt="rice" width="100%" height="30%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/fish.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/bance.jpg" alt="rice" width="100%" height="50%"></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+                </div>
+                <div class="container-sm">
+          <div class="pic"><img src="pictures/soup4.jpg" alt="rice" width="100%" height="50%">  <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+           <div class=" main-dishes">main Dishes</div>
+          <div><span class="span">*4.9</span>(355 atings) -Start at <span class="span">$3.00</span></div>
+        </div>
+
+      </div>
     </div>
+
+
+        <div class="bottomnavbar">
+          <div class="top bottomnav" >
+            <a href="#topnav">
+              <i class="fa fa-upload" aria-hidden="true"> back to top</i>
+            </a>
+          </div>
+          <div class="bottomnav">
+            <p><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i></a></p>
+            <p><a href="EditAccount.html"><i class="fa fa-user-o" aria-hidden="true"></i></a></p>
+            <p><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></p>
+          </div>
+        </div>   
+      
     
       
     </div>
