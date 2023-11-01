@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         const page2 = document.querySelector(".index1home");
         page2.style.transform = "translateX(0%)";
-      }, 2000);
+      }, );
     }, 1000);
 });
 // JavaScript (script.js):

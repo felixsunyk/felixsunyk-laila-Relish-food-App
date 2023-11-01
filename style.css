@@ -2,7 +2,7 @@
 
 body{
     filter: brightness(0.7);
-    background-color: darkgrey;
+   /* background-color: white; */
 }
 .index-div{
     position: absolute;
@@ -13,7 +13,7 @@ body{
     transition: transform 2s;
     justify-content: center;
     /* text-align: center; */
-    background-color:white;
+    /* background-color:white; */
     filter: brightness(0.8);
     /* margin: 4em auto; */
     /* border-radius: 2em; */
@@ -28,7 +28,7 @@ body{
     transform: translateX(0%);
 }
 .index1home{
-    transform: translateY(100%);
+    transform: translateX(100%);
 }
 
     .indexpageimage{
@@ -48,6 +48,7 @@ body{
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: bisque;
 }
 .homeimage{
     margin-bottom: 2em;
@@ -264,6 +265,9 @@ a{
     /* display: block; */
     width: 150px; /* Set the width of each item */
     width: fit-content; 
+}
+.pic{
+    border-radius: 1em;
 }
 /* .main1{
     display: block;
