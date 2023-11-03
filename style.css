@@ -4,15 +4,18 @@ body{
     filter: brightness(0.7);
    /* background-color: white; */
 }
+#topnav{
+    background-color: rgb(21, 72, 21);
+}
 .index-div{
-    position: absolute;
+     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; 
     /* display: flex; */
     transition: transform 2s;
     justify-content: center;
-    /* text-align: center; */
+    text-align: center;
     /* background-color:white; */
     filter: brightness(0.8);
     /* margin: 4em auto; */
@@ -31,7 +34,7 @@ body{
     transform: translateX(100%);
 }
 
-    .indexpageimage{
+.indexpageimage{
         padding-top: 10em;
     }
 
@@ -48,7 +51,8 @@ body{
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: bisque;
+  background-color: rgb(13, 41, 13);
+  color: azure;
 }
 .homeimage{
     margin-bottom: 2em;
@@ -123,6 +127,9 @@ a{
     text-align: center;
     margin-top: 3em;
 }
+#signup{
+    cursor: pointer;
+}
 .sign-up-page-h1{
     color: rgb(80, 150, 80);
     margin-bottom: 1em;
@@ -194,7 +201,7 @@ a{
 .forgetpage{
     margin: 4em auto;
     border-radius: 2em;
-     width: max-content;
+    width: max-content;
     border: 1px solid rgb(183, 186, 183);
     text-align: center;
     padding: 0.4em;
@@ -312,6 +319,21 @@ a{
     gap: 2em;
 
 }
+.hello{
+    color: azure;
+    margin: 0.8em;
+    line-height: 1em;
+    display: flex;
+}
+.wel{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-style: italic;
+}
+.location{
+   text-align: right;
+   margin-left: auto;
+}
+
 
  .main-dishes-box{
     display: flex;
@@ -331,6 +353,15 @@ a{
     /* margin: 0.4em; */
    font-size: larger;
    font-weight: bold;
+}
+.main1{
+    border: 1px solid green;
+    margin: 3em;
+    background-color: azure;
+    color: rgb(24, 18, 18);
+    padding: 0.5em;
+    border-radius: 1em;
+
 }
 .span{
     color: rgb(240, 53, 53);
