@@ -4,12 +4,17 @@ const page1 = document.querySelector(".index-page");
 const page2 = document.querySelector(".index1home");
 const indexEmail = document.getElementById("loginemail");
 const indexPassword = document.getElementById("loginpassword");
-const login = document.getElementById("login");
+const log = document.getElementById("log");
 // welcome message on the main page
 const nameSpan = document.getElementById("nameSpan");
 // sign up page
- const nameInput = document.getElementById("signName");
-// const signUp = document.getElementById("sign")
+//  const nameInput = document.getElementById("signname");
+ // sign-up page
+//  const signUpName = document.getElementById("signname")
+//  const signUpEmail = document.getElementById("signemail")
+//  const signUppassword = document.getElementById("signpassword")
+//  const signUpbtn = document.getElementById("signbutton")
+//  const confirmationMessage = document.getElementById("confirmationMessage");
 
 // JavaScript (script.js):
 // home page javascript
@@ -24,22 +29,41 @@ window.addEventListener("load", () => {
 });
 
 // login page
-
-login.addEventListener("click", function () {
-  if (
-    indexEmail.value === "felix@gmail.com" &&
-    indexPassword.value === "11111"
-  ) {
-    window.location.href = "Reset.html";
-  } else {
-    alert("Invalid email or password. Please try again.");
+document.addEventListener("DOMContentLoaded", function () {
+log.addEventListener("click", function () {
+  if (indexEmail.value === "felix@gmail.com" && indexPassword.value === "felix"){
+    window.open("main.html")
+  }else{ 
+    alert("Invalid email or password. Please try again.")
   }
+})
 });
 
-const getInputName = () => {
-  const name = nameInput.value;
-    // Updateting the content of the span with the name
-    nameSpan.textContent = name;
+document.addEventListener("DOMContentLoaded", function () {
+  const signUpName = document.getElementById("signname")
+  const signUpEmail = document.getElementById("signemail")
+  const signUppassword = document.getElementById("signpassword")
+  const signUpbtn = document.getElementById("signbutton")
+  const confirmationMessage = document.getElementById("confirmationMessage");
+
+signUpbtn.addEventListener("click", function () {
+  // e.preventDefault(); 
+  const username = signUpName.value.trim();
+  const useremail = signUpEmail.value.trim();
+  const userpassword = signUppassword.value.trim();
+if (username !== "" && useremail !== "" && userpassword !== ""){ 
+  // confirmationMessage.display = "block";
+  // setTimeout(function () {
+    window.open("main.html"); 
+  // }, 4000)
+}else{
+  alert("Please fill in all the required fields.");
 }
+});
+if (username){
+  nameSpan.textContent =`Hello, ${username}`;
+ }
+});
+
 
 
