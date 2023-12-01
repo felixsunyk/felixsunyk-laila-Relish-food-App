@@ -8,13 +8,12 @@
 </head>
 <body class="resetpage">
 
-    <div class="resetdiv">
+    <div class="resetdiv" id="verificationdiv">
         <h1 class="reseth1">verification code</h1>
         <p>A verification code has been sent to your mail.</p>
-        <input type="text" placeholder="verification code" class="input" name="verificationcode"> <br>
-        <button class="button login"><a href="Reset-form.html"  class="#" target="self">Confirm code</a></button><br>
+        <input type="number" id="verificationcode" minlength="6" placeholder="verification code" maxlength="6" class="input" name="verificationcode"> <br>
+        <button class="button login" id="verificationbtn">Confirm code</button><br>
         <a href="reset-form.html" class="change-email" target="_self">Change Email</a>
-
     </div>
     
 </body>
