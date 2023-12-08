@@ -1,23 +1,23 @@
 "use scrict"
-
 const page1 = document.querySelector(".index-page");
 const page2 = document.querySelector(".index1home");
 const indexemail = document.getElementById("loginemail");
 const indexPassword = document.getElementById("loginpassword");
 const log = document.getElementById("log");
-const signUpName = document.getElementById("signname");
+// const signUpName = document.getElementById("signname");
 const namespan = document.getElementById("namespan")
 const forgetInput = document.getElementById("forgetinput");
 const forgetbtn = document.getElementById("forgetbtn");
 const forgetbutton2 = document.getElementById("forgetbutton2");
 const shopping = document.getElementsByClassName("shopping");
 const subtraction = document.getElementById("subtract");
+const dsp = document.getElementById("dsp");
 // const display = document.getElementById("display")
 const adition = document.getElementById("adition");
-const amount = document.getElementById("span");
-// const price = document.getElementById("price");
-// const sh = document.getElementById("sh");
-// const dsp = document.getElementById("dsp");
+const span = document.getElementById("span");
+const price = document.getElementById("price");
+const rice = document.getElementById("rice");
+const sh = document.getElementById("sh");
 // loginemail
 
 
@@ -34,12 +34,9 @@ window.addEventListener("load", () => {
 });
 
 
-const greetings = () => {
-  const welname = indexemail.value;
-  namespan.innerHTML= "Hello" + welname;
-}
 // login page
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (e) {
+  e.preventDefault();
 log.addEventListener("click", function () {
   if (indexemail.value === "felix@gmail.com" && indexPassword.value === "felix"){
     window.open("main.html");
@@ -49,7 +46,6 @@ log.addEventListener("click", function () {
   }
 })
 });
-
 
 // sign up page
 document.addEventListener("DOMContentLoaded", function () {
@@ -66,20 +62,15 @@ signUpbtn.addEventListener("click", function () {
   const username = signUpName.value.trim();
   const useremail = signUpEmail.value.trim();
   const userpassword = signUppassword.value.trim();
- 
+
 if (username !== "" && useremail !== "" && userpassword !== ""){ 
-  // confirmationMessage.display = "block";
-  // setTimeout(function () {
-    window.open("main.html"); 
-    // }, 4000)
+    window.open("main.html");
+    
   }else{
     alert("Please fill in all the required fields.");
   }
 });
-   
-// if (username){
-//   nameSpan.textContent =`Hello, ${username}`;
-//  }
+
 });
 
 // forget page
@@ -106,6 +97,8 @@ const verificationbtn = document.getElementById("verificationbtn")
   })
 })
 
+
+
 // const cartdisp = document.getElementById("sh").style.display = "block";
 document.addEventListener("DOMContentLoaded", function () {
   log.addEventListener("click", function () {
@@ -117,47 +110,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })
   });
-//  document.getElementById("dsp").addEventListener("click", cartdisp());
-
 
 let value = 0;
 function increment() {
   value++;
-  // updateprice()
+  updateprice()
   updateDisplay();
-  priceformore();
+  // priceformore();
 }
-
 function decrement() {
   value--;
-  // updateprice()
+  updateprice()
   updateDisplay();
 }
-
 document.getElementById("display")
-// .innerText = value;
-
 function updateDisplay(){
  display.innerText=value;
 }
 // price.innerText = "3,000.00"
 // let p =+(price.innerText);
-// let prise = price.innerHTML;
+let prise = price.innerHTML;
 function order() {
+  // cartdisp();
   display.innerText=1;
   updateName();
-  document.getElementById("span").innerText = prise;
+ span.innerHTML = prise;
   value++
 }
 
-<script>
-// Fetch the value from the source page
-let sourcePage = window.open('main.html', '_blank');
-let tagValue = mainPage.document.getElementById('price').innerText;
-
-// Display the value on the destination page
-document.getElementById('span').innerText = 'Value from source page: ' + tagValue;
-</script>
+const updateName =()=>{
+  document.getElementById("list").innerText= rice.innerText;
+}
+// const cartdisp = () => {
+//     window.open('cartpage.html', '_self'); 
+// }
 
 
 // has not work yet
@@ -165,16 +151,35 @@ const priceformore = () =>{
   span.innerText = aditionalprice;
 }
 
-
 function updateprice() {
-    let newPrice = +(prise) ;
+  currentNumber = parseInt(price.innerText);
+    let newPrice = currentNumber *2;
      span.innerText = newPrice;
  }
+// function updateprice1() {
+//   // currentNumber = parseInt(price.innerText);
+//     let newPrice1 = currentNumber - 3000;
+//      span.innerText = newPrice1;
+//  }
+
+
+dsp.addEventListener('click', function() {
+  const hiddenText = sh;
+  if (hiddenText.style.display !== 'none') {
+    hiddenText.style.display = 'block';
+    // this.innerText = sh.innerHTML;
+  } else {
+    hiddenText.style.display = 'none';
+    // this.innerText = sh.innerHTML;
+  }
+});
+
+
 
 // let frieds = friedrice.innerHTML;
-let fried =document.getElementById("rice").innerText;
-function updateName() {
-  document.getElementById("list").innerText = fried;
-}
+// let fried =document.getElementById("rice").innerText;
+// function updateName() {
+//   document.getElementById("list").innerText = fried;
+// }
 
 

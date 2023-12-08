@@ -76,11 +76,10 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
         
-
             <div class="hello">
                   <div class="welcome">
-                        <p class="wel">welcome to  Laila's Relis, <br> a taste like home.</p>
                         <p id="namespan"></p>
+                        <p class="wel">welcome to  Laila's Relis, <br> a taste like home.</p>
                   </div>
                   <div class="location"><i class="fa fa-map-marker" aria-hidden="true">
                         </i><small> Lekki, Lagos</small>
@@ -104,7 +103,7 @@
                               <p>Jellof rice</p>
                         </div>
                         <div>
-                              <p>price: <span id="price">3,000.00</span>
+                              <p>price: <span id="price">3000.00</span>
                               <button onclick="order()">Buy now</button></p>
                         </div>
                         
@@ -317,6 +316,23 @@
                   </div>
             </div>  
       </div>
+
+            <div class="shopping" id="sh">
+                <h2 class="shoppingh2">your shopping cart</h2> 
+                  <div class=" hr-container"><hr></div>
+                        <div class="purchaselist">
+                              <p id="list"></p>
+                              <div class="shoppingitems">
+                                    <div class="add">
+                                          <p onclick="decrement()" id="subtract">-</p>
+                                          <p id="display">0</p>
+                                          <p onclick=" increment()" id="adition">+</p>
+                                    </div>
+                                <p><i class="fa-sharp fa-solid fa-naira-sign"></i> <span id="span"> </span></p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
       
       <div class="bottomnavbar">
             <div class="top bottomnav" >
@@ -328,7 +344,8 @@
             <p><a href="main.html">
                   <i class="fa fa-home" aria-hidden="true"></i></a></p>
                   <p><a href="EditAccount.html"><i class="fa fa-user-o" aria-hidden="true"></i></a></p>
-                  <button><i class="fa fa-shopping-basket" aria-hidden="true" id="dsp"></i></button>
+                <button ><i class="fa fa-shopping-basket" aria-hidden="true" id="dsp"></i></button>
+                 
             </div>
       </div>   
     <script src="srcipt.js"></script>

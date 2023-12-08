@@ -5,26 +5,23 @@ body{
    /* background-color: white; */
 }
 #topnav{
-    background-color: rgb(21, 72, 21);
+    background-color: rgb(131, 109, 109);
 }
 .index-div{
-     position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
+   background-color: white;
     width: 100%; 
-    /* display: flex; */
+  
     transition: transform 2s;
     justify-content: center;
     text-align: center;
-    /* background-color:white; */
-    filter: brightness(0.8);
-    /* margin: 4em auto; */
-    /* border-radius: 2em; */
-     /* width: max-content; */
+    /* filter: brightness(0.8); */
     border: 1px solid rgb(183, 186, 183);
-    text-align: center;
-    /* padding: 1em; */
-    padding-top: 3em;
+    
+    /* padding-top: 3em; */
+    padding-bottom: 2em;
     height: 100vh;
 }
 .index-page{
@@ -40,7 +37,7 @@ body{
 .index-page p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2em;
-    padding-bottom: 12em;
+    padding-bottom: 1em;
    }
 
 .homepage{
@@ -50,11 +47,11 @@ body{
     position: relative;
     width: 100%;
     overflow: hidden;
-  background-color: rgb(13, 41, 13);
+  background-color: white;
   color: azure;
 }
 .homeimage{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .homeimage p{
  font-family: Georgia, 'Times New Roman', Times, serif;
@@ -115,16 +112,16 @@ input:hover{
 }
 .hr-container{
     width: 50%;
-    /* margin: 0; */
     margin: auto;
-    /* padding: 1.5em; */
+    color: black;
     text-align: center;
-    margin-bottom: 2em;
 }
 .newaccount{
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     font-weight: bold;
+    color: black;
+    padding-bottom: 2em;
 }
 a{
     text-decoration: none;
@@ -188,9 +185,6 @@ a{
     
     /* height: 100vh; */
  }   
-  
-   
-    
 
 .reset-form-h1{
     margin-bottom: 3em;
@@ -209,15 +203,13 @@ a{
 /* forget page css */
 
 .forgetpage{
-    /* margin: 4em auto; */
-    /* border-radius: 2em; */
     width: 100%;
     height: 100vh;
     /* border: 1px solid rgb(183, 186, 183); */
     text-align: center;
-    /* padding: 0.4em; */
-    padding-top: 3em;
-    background-color: darkgrey;
+    padding: 0.4em;
+    /* padding-top: 3em; */
+    background-color:rgb(144, 140, 140);
     
 }
 .forgetdiv{
@@ -349,7 +341,10 @@ a{
 }
 
 .shopping{
-    /* display: none;   */
+    display: none;  
+    padding-left: auto;
+}
+.shoppingh2{
     text-align: center;
 }
 .shoppingitems{
@@ -359,11 +354,9 @@ a{
     gap: 10em;
    margin-left: auto;
 }
-/* .cartdisplay{
-    display: flex;
-} */
+
 .purchaselist{
-    margin-top: 5em;
+    margin-top: 3em;
     justify-content: center;
     text-align: center;
 }
